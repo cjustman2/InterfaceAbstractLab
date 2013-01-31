@@ -52,9 +52,12 @@ public abstract class ProgrammingClasses {
                     
             System.exit(0);
         }
-        if(prerequisites == ("null") || prerequisites.length() == 0){
-            prerequisites = "There are no Prerequisites for this class.";
+        if(prerequisites == null || prerequisites.length() == 0){
+            prerequisites = "Can not be null.";
     }
+        if(prerequisites.equals("none")){
+            prerequisites = "There are not prerequisites";
+        }
         this.prerequisites = prerequisites;
     }
     
