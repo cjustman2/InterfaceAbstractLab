@@ -17,7 +17,13 @@ public class StartProgram {
         String courseNumber = "120";
         String courseName = "Java";
         double credits = 2;
-        String prerequisites = "none";
+        String prerequisites;
+        
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Enter which class you want to take \n" +
+        "Enter 1 for Intro To Programming\n" + "Enter 2 for Intro To Java\n" + 
+                "Enter 3 for Advanced Java");
+        prerequisites = keyboard.nextLine();
         
          ProgrammingClasses course = new IntroJavaCourse(courseName, courseNumber, prerequisites, credits);
          

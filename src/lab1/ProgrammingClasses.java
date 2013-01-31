@@ -52,7 +52,7 @@ public abstract class ProgrammingClasses {
                     
             System.exit(0);
         }
-        if(prerequisites.equals("none")){
+        if(prerequisites == ("null") || prerequisites.length() == 0){
             prerequisites = "There are no Prerequisites for this class.";
     }
         this.prerequisites = prerequisites;
