@@ -7,13 +7,14 @@ package lab1;
  * @version     1.00
  */
 public class IntroJavaCourse extends ProgrammingClasses{
-    private String courseName;
-    private String courseNumber;
 
 
-    public IntroJavaCourse(String courseName, String courseNumber) {
-        this.courseName = courseName;
-        this.courseNumber = courseNumber;
+
+       public IntroJavaCourse(String courseName, String courseNumber, String prerequisites, double credits) {
+        this.setCourseName(courseName);
+        this.setCourseNumber(courseNumber);
+        this.setPrerequisites(prerequisites);
+        this.setCredits(credits);
     }
 
   

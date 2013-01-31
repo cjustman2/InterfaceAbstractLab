@@ -4,7 +4,7 @@
  */
 package lab1;
 
-import javax.swing.JOptionPane;
+
 
 /**
  *
@@ -48,10 +48,13 @@ public abstract class ProgrammingClasses {
 
     public void setPrerequisites(String prerequisites) {
         if(prerequisites == null || prerequisites.length() == 0) {
-            System.out.println("Error: prerequisites cannot be null of empty string");
+            prerequisites = "Error: prerequisites cannot be null of empty string";
                     
             System.exit(0);
         }
+        if(prerequisites.equals("none")){
+            prerequisites = "There are no Prerequisites for this class.";
+    }
         this.prerequisites = prerequisites;
     }
     

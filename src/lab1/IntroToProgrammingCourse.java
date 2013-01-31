@@ -10,31 +10,14 @@ package lab1;
  * @version     1.00
  */
 public class IntroToProgrammingCourse extends ProgrammingClasses {
-    private String courseName;
-    private String courseNumber;
+
    
 
-//    public IntroToProgrammingCourse(String courseName, String courseNumber) {
-//        this.setCourseName(courseName);
-//        this.setCourseNumber(courseNumber);
-//    }
-
-//    public String getCourseNumber() {
-//        return courseNumber;
-//    }
-//
-//    public final void setCourseNumber(String courseNumber) {
-//        if(courseNumber == null || courseNumber.length() == 0) {
-//            JOptionPane.showMessageDialog(null,
-//                    "Error: courseNumber cannot be null of empty string");
-//            System.exit(0);
-//        }
-//        this.courseNumber = courseNumber;
-//    }
-
-  
-
-
-
+    public IntroToProgrammingCourse(String courseName, String courseNumber, String prerequisites, double credits) {
+        this.setCourseName(courseName);
+        this.setCourseNumber(courseNumber);
+        this.setPrerequisites(prerequisites);
+        this.setCredits(credits);
+    }
     
 }

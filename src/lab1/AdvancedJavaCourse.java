@@ -9,8 +9,7 @@ package lab1;
  * @version     1.00
  */
 public class AdvancedJavaCourse extends ProgrammingClasses {
-    private String courseName;
-    private String courseNumber;
+
 
     public AdvancedJavaCourse(String courseName, String courseNumber, String prerequisites, double credits) {
         this.setCourseName(courseName);
@@ -19,12 +18,6 @@ public class AdvancedJavaCourse extends ProgrammingClasses {
         this.setCredits(credits);
     }
 
-//    public String getCourseNumber() {
-//        return courseNumber;
-//    }
-//
-//    public void setCourseNumber(String courseNumber) {
-//        this.courseNumber = courseNumber;
-//    }
+
     
 }

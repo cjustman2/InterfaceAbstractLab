@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 package lab1;
-
+import java.util.Scanner;
 /**
  *
  * @author chris
@@ -19,7 +19,7 @@ public class StartProgram {
         double credits = 2;
         String prerequisites = "none";
         
-         ProgrammingClasses course = new AdvancedJavaCourse(courseName, courseNumber, prerequisites, credits);
+         ProgrammingClasses course = new IntroJavaCourse(courseName, courseNumber, prerequisites, credits);
          
          System.out.println("courseNumber: " + course.getCourseNumber() + "\n" +
          "courseName: " + course.getCourseName() + "\n" + "Credits: " + course.getCredits() +
