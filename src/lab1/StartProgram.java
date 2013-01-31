@@ -14,6 +14,15 @@ public class StartProgram {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        String courseNumber = "120";
+        String courseName = "Java";
+        double credits = 2;
+        String prerequisites = "none";
+        
+         ProgrammingClasses course = new AdvancedJavaCourse(courseName, courseNumber, prerequisites, credits);
+         
+         System.out.println("courseNumber: " + course.getCourseNumber() + "\n" +
+         "courseName: " + course.getCourseName() + "\n" + "Credits: " + course.getCredits() +
+                 "\n" + "Prerequisites: " + course.getPrerequisites());
     }
 }
