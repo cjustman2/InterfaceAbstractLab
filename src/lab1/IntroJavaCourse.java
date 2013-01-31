@@ -6,7 +6,7 @@ package lab1;
  * @author      Chris Justman
  * @version     1.00
  */
-public class IntroJavaCourse extends ProgrammingClasses{
+public class IntroJavaCourse extends ProgrammingClass{
 
 
 

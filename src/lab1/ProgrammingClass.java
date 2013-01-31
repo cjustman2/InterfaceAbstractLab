@@ -10,7 +10,7 @@ package lab1;
  *
  * @author chris
  */
-public abstract class ProgrammingClasses {
+public abstract class ProgrammingClass {
     private double credits;
     private String courseName;
     private String prerequisites;

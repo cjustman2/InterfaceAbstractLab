@@ -8,7 +8,7 @@ package lab1;
  * @author      Chris Justman
  * @version     1.00
  */
-public class AdvancedJavaCourse extends ProgrammingClasses {
+public class AdvancedJavaCourse extends ProgrammingClass {
 
 
     public AdvancedJavaCourse(String courseName, String courseNumber, String prerequisites, double credits) {

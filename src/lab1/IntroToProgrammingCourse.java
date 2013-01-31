@@ -9,7 +9,7 @@ package lab1;
  * @author      Chris Justman
  * @version     1.00
  */
-public class IntroToProgrammingCourse extends ProgrammingClasses {
+public class IntroToProgrammingCourse extends ProgrammingClass {
 
    
 
