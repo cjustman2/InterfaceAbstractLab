@@ -26,7 +26,9 @@ public class IntroJavaCourse extends ProgrammingDegree{
         this.credits = credits;
     }
       
-   
+               public double getCredits() {
+        return credits;
+    }
       
          public void setPrerequisites(String prerequisites) {
         if(prerequisites == null || prerequisites.length() == 0) {
@@ -38,7 +40,11 @@ public class IntroJavaCourse extends ProgrammingDegree{
         this.prerequisites = prerequisites;
     }
 
-
+      public String getPrerequisites() {
+        return prerequisites;
+    }
+      
+  
    
 
 }

@@ -15,9 +15,9 @@ public class StartProgram {
      */
     public static void main(String[] args) {
         String courseNumber = "120";
-        String courseName = "Java";
-        double credits = 4;
-        String prerequisites = "Intro to Programming";
+        String courseName = "java";
+        double credits = 2;
+        String prerequisites = null;
         
         
          ProgrammingDegree course = new IntroJavaCourse(courseName, courseNumber, prerequisites, credits);

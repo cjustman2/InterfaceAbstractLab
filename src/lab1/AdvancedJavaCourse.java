@@ -29,6 +29,9 @@ public class AdvancedJavaCourse extends ProgrammingDegree {
         this.credits = credits;
     }
     
+                 public double getCredits() {
+        return credits;
+    }
     
     
        public void setPrerequisites(String prerequisites) {
@@ -39,6 +42,10 @@ public class AdvancedJavaCourse extends ProgrammingDegree {
         }
   
         this.prerequisites = prerequisites;
+    }
+       
+             public String getPrerequisites() {
+        return prerequisites;
     }
     
 }
