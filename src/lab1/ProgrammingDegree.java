@@ -19,10 +19,7 @@ public abstract class ProgrammingDegree {
     
    
 
-   public abstract void setCredits(double credits);
-   
-   
-             public abstract double getCredits();
+  
              
              
    public abstract void setPrerequisites(String prerequisites);
@@ -30,7 +27,18 @@ public abstract class ProgrammingDegree {
    
               public abstract String getPrerequisites();
              
-    
+           public void setCredits(double credits) {
+        if(credits < 0.5 || credits > 4.0) {
+           
+                    System.out.println("Error: credits must be in the range 0.5 to 4.0");
+            System.exit(0);
+        }
+        this.credits = credits;
+    }
+        
+                public double getCredits() {
+        return credits;
+    }
 
     
         public String getCourseName() {

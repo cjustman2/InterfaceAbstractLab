@@ -17,13 +17,13 @@ public class StartProgram {
         String courseNumber = "120";
         String courseName = "java";
         double credits = 2;
-        String prerequisites = null;
+        String prerequisites = "None";
         
         
-         ProgrammingDegree course = new IntroJavaCourse(courseName, courseNumber, prerequisites, credits);
+         ProgrammingDegree course = new IntroToProgrammingCourse(courseName, courseNumber, prerequisites, credits);
          
          System.out.println("courseNumber: " + course.getCourseNumber() + "\n" +
-         "courseName: " + course.getCourseName() + "\n" + "Credits: " + course.getCredits() +
+         "courseName: " + course.getCapitalizedCourseName() + "\n" + "Credits: " + course.getCredits() +
                  "\n" + "Prerequisites: " + course.getPrerequisites());
     }
 }

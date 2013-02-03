@@ -10,7 +10,7 @@ package lab1;
  * @version     1.00
  */
 public class IntroToProgrammingCourse extends ProgrammingDegree {
-        private double credits;
+        
         private String prerequisites;
 
     public IntroToProgrammingCourse(String courseName, String courseNumber, String prerequisites, double credits) {
@@ -21,18 +21,7 @@ public class IntroToProgrammingCourse extends ProgrammingDegree {
     }
     
     
-        public void setCredits(double credits) {
-        if(credits < 0.5 || credits > 4.0) {
-           
-                    System.out.println("Error: credits must be in the range 0.5 to 4.0");
-            System.exit(0);
-        }
-        this.credits = credits;
-    }
-        
-                public double getCredits() {
-        return credits;
-    }
+ 
         
         
            public void setPrerequisites(String prerequisites) {
