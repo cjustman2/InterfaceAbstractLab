@@ -16,11 +16,11 @@ public class StartProgram {
     public static void main(String[] args) {
         String courseNumber = "120";
         String courseName = "Java";
-        double credits = 2;
-        String prerequisites = "none";
+        double credits = 4;
+        String prerequisites = "Intro to Programming";
         
         
-         ProgrammingClass course = new IntroJavaCourse(courseName, courseNumber, prerequisites, credits);
+         ProgrammingDegree course = new IntroJavaCourse(courseName, courseNumber, prerequisites, credits);
          
          System.out.println("courseNumber: " + course.getCourseNumber() + "\n" +
          "courseName: " + course.getCourseName() + "\n" + "Credits: " + course.getCredits() +
