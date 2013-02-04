@@ -14,6 +14,19 @@ public class RunProgram {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+    String courseName = "Intro To Programming";
+    String courseNumber = "104-1022";
+    double credits = 4;
+    String prerequisites = "none";
+    
+    
+    
+    ProgrammingDegree course = new IntroToProgrammingCourse( courseName, courseNumber,credits,prerequisites);
+    
+    
+        System.out.println("Course Name: " + course.getCourseName() + "\n" +
+                "Course Number " + course.getCourseNumber() + "\n" + 
+                "Credits: " + course.getCredits());
     }
-}
+    }
+

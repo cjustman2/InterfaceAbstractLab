@@ -1,20 +1,23 @@
 package lab2;
 
+import javax.swing.JOptionPane;
+
 /**
  * Describe responsibilities here.
- *
- * @author      your name goes here
+ *To provide setters and getters for all properties listed in interface
+ * @author      Chris Justman
  * @version     1.00
  */
 public class IntroJavaCourse implements ProgrammingDegree{
-    String courseName;
+     private String courseName;
     private String courseNumber;
     private double credits;
     private String prerequisites;
 
-    public IntroJavaCourse(String courseName, String courseNumber) {
+    public IntroJavaCourse(String courseName, String courseNumber, double credits, String prerequisites) {
         this.courseName = courseName;
         this.courseNumber = courseNumber;
+        this.credits = credits;
     }
 
     public String getCourseNumber() {
@@ -22,6 +25,10 @@ public class IntroJavaCourse implements ProgrammingDegree{
     }
 
     public void setCourseNumber(String courseNumber) {
+        if(courseNumber == null || courseNumber.length() == 0) {
+      System.out.println("Error: courseNumber cannot be null of empty string");
+            System.exit(0);
+        }
         this.courseNumber = courseNumber;
     }
 
@@ -30,14 +37,34 @@ public class IntroJavaCourse implements ProgrammingDegree{
     }
 
     public void setCredits(double credits) {
+        if(credits < 0.5 || credits > 4.0) {
+       System.out.println("Error: credits cannot be null of empty string");
+            System.exit(0);
+        }
         this.credits = credits;
     }
 
-    public String getPrerequisites() {
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public void setCourseName(String courseName) {
+        if(courseName == null || courseName.length() == 0) {
+          System.out.println("Error: courseName cannot be null of empty string");
+            System.exit(0);
+        }
+        this.courseName = courseName;
+    }
+    
+         public String getPrerequisites() {
         return prerequisites;
     }
 
     public void setPrerequisites(String prerequisites) {
+        if(prerequisites == null || prerequisites.length() == 0) {
+        System.out.println("Error: prerequisites cannot be null of empty string");
+            System.exit(0);
+        }
         this.prerequisites = prerequisites;
     }
 
