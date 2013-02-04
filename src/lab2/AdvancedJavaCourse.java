@@ -10,11 +10,12 @@ package lab2;
  */
 public class AdvancedJavaCourse implements ProgrammingDegree{
      private String courseName;
-    private String courseNumber;
-    private double credits;
+    private String courseNumber; 
+    private double credits; 
     private String prerequisites;
 
-    public AdvancedJavaCourse(String courseName, String courseNumber, double credits, String prerequisites) {
+ 
+      public AdvancedJavaCourse(String courseName, String courseNumber, double credits, String prerequisites) {
         this.courseName = courseName;
         this.courseNumber = courseNumber;
         this.credits = credits;
@@ -32,7 +33,7 @@ public class AdvancedJavaCourse implements ProgrammingDegree{
         }
         this.courseNumber = courseNumber;
     }
-
+    
     public double getCredits() {
         return credits;
     }
