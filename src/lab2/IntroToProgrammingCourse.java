@@ -13,16 +13,17 @@ public class IntroToProgrammingCourse implements ProgrammingDegree{
     private String courseNumber;
     private double credits;
 
-    public IntroToProgrammingCourse(String courseName, String courseNumber) {
-        this.setCourseName(courseName);
-        this.setCourseNumber(courseNumber);
+    public IntroToProgrammingCourse(String courseName, String courseNumber, double credits) {
+        this.courseName = courseName;
+        this.courseNumber = courseNumber;
+        this.credits = credits;
     }
 
     public String getCourseNumber() {
         return courseNumber;
     }
 
-    public final void setCourseNumber(String courseNumber) {
+    public void setCourseNumber(String courseNumber) {
         if(courseNumber == null || courseNumber.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: courseNumber cannot be null of empty string");
@@ -48,7 +49,7 @@ public class IntroToProgrammingCourse implements ProgrammingDegree{
         return courseName;
     }
 
-    public final void setCourseName(String courseName) {
+    public void setCourseName(String courseName) {
         if(courseName == null || courseName.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: courseName cannot be null of empty string");
