@@ -26,7 +26,8 @@ public class RunProgram {
     
         System.out.println("Course Name: " + course.getCourseName() + "\n" +
                 "Course Number " + course.getCourseNumber() + "\n" + 
-                "Credits: " + course.getCredits());
+                "Credits: " + course.getCredits() + "\n" +
+                "Prerequisites: " + course.getPrerequisites());
     }
     }
 

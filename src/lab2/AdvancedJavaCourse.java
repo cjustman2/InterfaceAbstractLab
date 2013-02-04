@@ -1,6 +1,6 @@
 package lab2;
 
-import javax.swing.JOptionPane;
+
 
 /**
  * Describe responsibilities here.
@@ -18,6 +18,7 @@ public class AdvancedJavaCourse implements ProgrammingDegree{
         this.courseName = courseName;
         this.courseNumber = courseNumber;
         this.credits = credits;
+        this.prerequisites = prerequisites;
     }
 
     public String getCourseNumber() {
