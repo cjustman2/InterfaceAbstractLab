@@ -17,6 +17,11 @@ public abstract class FootballTeam {
     public abstract String getRun();
     
     
+    //every player has to be able to tackle
+    public abstract void setTackle();
+    public abstract String getTackle();
+    
+    
     //every player can jump the same, using concrete method in superclass
     public void setJump(String jump){
         //method to jump
