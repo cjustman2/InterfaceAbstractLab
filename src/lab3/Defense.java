@@ -9,5 +9,15 @@ package lab3;
  * @author chris
  */
 public class Defense extends FootballTeam{
+        //every player will run, but offense, defense, special teams will run differently
+    private String run;
+    
+    public void setRun(){
+        //method to run
+    }
+    
+    public String getRun(){
+        return run;
+    }
     
 }
