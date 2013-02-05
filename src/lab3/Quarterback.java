@@ -10,4 +10,18 @@ package lab3;
  */
 public class Quarterback extends Offense{
     
+    public String throwBall;
+    
+    
+    //only quarterback can throw the ball
+    public void setThrowBall(String throwBall) {
+        this.throwBall = throwBall;
+    }
+
+    public String getThrowBall() {
+        return throwBall;
+    }
+    
+    
+    
 }

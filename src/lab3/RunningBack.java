@@ -9,5 +9,6 @@ package lab3;
  * @author chris
  */
 public class RunningBack extends Offense{
+ 
     
 }
